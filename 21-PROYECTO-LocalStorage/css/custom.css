@@ -1,0 +1,103 @@
+h1, h2 {
+    text-align: center;
+}
+
+#contenido {
+    margin-top: 40px;
+}
+.borrar-tweet,
+.borrar-tweet:hover {
+    float: right;
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+}
+.error {
+    background-color: red;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    max-width: 400px;
+    margin: 0 auto;
+    color: white;
+}
+@keyframes slideDown {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.message-slide-down {
+    animation: slideDown 0.5s ease-out forwards;
+}
+.new-message-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+    margin: 20px auto;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+}
+.saved-message-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+    margin: 20px auto;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+}
+.new-message-container .message {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    padding: 8px 15px;
+    border-radius: 18px;
+    font-size: 14px;
+    line-height: 1.4;
+    max-width: 80%;
+    word-wrap: break-word;
+    background-color: darkseagreen;
+}
+.saved-message-container .message {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    padding: 8px 15px;
+    border-radius: 18px;
+    font-size: 14px;
+    line-height: 1.4;
+    max-width: 80%;
+    word-wrap: break-word;
+    background-color: cornflowerblue;
+}
+.delete-btn {
+    display: flex;
+    align-items: center;
+    background-color: #ff4c4c; /* Red color for the delete button */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px 10px; /* Padding for better spacing */
+    font-size: 12px; /* Smaller font size */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    margin-left: 10px; /* Spacing from the message text */
+}
+.delete-btn:hover {
+    background-color: #e04343; /* Slightly darker red on hover */
+}
+.delete-btn:active {
+    background-color: #c03939; /* Even darker when clicked */
+    transform: scale(0.95); /* Slight shrink effect on click */
+}
